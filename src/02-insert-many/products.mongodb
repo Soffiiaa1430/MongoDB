@@ -6,23 +6,163 @@ db.products.drop() // elimina los documentos creados en la colleccion anteriorme
 
 db.products.insertMany([
   {
-    _id: 1,
-    name: "Prodcut 1",
-    price: 100
-  },
-  {
-    _id: 2,
-    name: "Prodcut 2",
-    price: 20
-  },
-  {
-    _id: 3,
-    name: "Prodcut 3",
-    price: 120
-  },
-  {
-    _id: 4,
-    name: "Prodcut 4",
-    price: 120
-  }
-])
+        _id: 1,
+        title: "Collar para perros",
+        price: 15.99,
+        description: "Collar ajustable para perros de todas las razas y tamaños.",
+        category: "Accesorios",
+        image: "collar_image.jpg"
+      },
+      {
+        _id: 2,
+        title: "Juguete interactivo para gatos",
+        price: 9.99,
+        description: "Juguete de plumas para mantener entretenidos a tus gatos.",
+        category: "Juguetes",
+        image: "cat_toy_image.jpg"
+      },
+      {
+        _id: 3,
+        title: "Cama suave para mascotas",
+        price: 29.99,
+        description: "Cama acolchada y cómoda para perros y gatos.",
+        category: "Camas",
+        image: "pet_bed_image.jpg"
+      },
+      {
+        _id: 4,
+        title: "Correa retráctil para perros",
+        price: 18.99,
+        description: "Correa extensible para pasear cómodamente a tu perro.",
+        category: "Accesorios",
+        image: "leash_image.jpg"
+      },
+      {
+        _id: 5,
+        title: "Alimento balanceado para gatos",
+        price: 24.99,
+        description: "Nutritivo alimento para mantener a tu gato saludable y feliz.",
+        category: "Alimentos",
+        image: "cat_food_image.jpg"
+      },
+      {
+        _id: 6,
+        title: "Cepillo para perros y gatos",
+        price: 12.99,
+        description: "Cepillo de cerdas suaves para cuidar el pelaje de tus mascotas.",
+        category: "Cuidado Personal",
+        image: "brush_image.jpg"
+      },
+      {
+        _id: 7,
+        title: "Rascador para gatos",
+        price: 32.99,
+        description: "Rascador resistente para satisfacer los instintos de tu gato.",
+        category: "Mobiliario",
+        image: "scratcher_image.jpg"
+      },
+      {
+        _id: 8,
+        title: "Juguete masticable para perros",
+        price: 14.99,
+        description: "Juguete duradero para ayudar a mantener los dientes de tu perro limpios.",
+        category: "Juguetes",
+        image: "chew_toy_image.jpg"
+      },
+      {
+        _id: 9,
+        title: "Arnés para gatos",
+        price: 11.99,
+        description: "Arnés ajustable para gatos que disfrutan de paseos al aire libre.",
+        category: "Accesorios",
+        image: "cat_harness_image.jpg"
+      },
+      {
+        _id: 10,
+        title: "Comedero automático para perros",
+        price: 39.99,
+        description: "Dispensador de comida programable para facilitar la alimentación de tu perro.",
+        category: "Alimentos",
+        image: "automatic_feeder_image.jpg"
+      },
+      {
+        _id: 11,
+        title: "Pelota de goma para perros",
+        price: 8.99,
+        description: "Pelota resistente y rebote para horas de diversión para tu perro.",
+        category: "Juguetes",
+        image: "dog_ball_image.jpg"
+      },
+      {
+        _id: 12,
+        title: "Chaqueta impermeable para perros",
+        price: 22.99,
+        description: "Chaqueta resistente al agua para proteger a tu perro en días lluviosos.",
+        category: "Ropa",
+        image: "dog_jacket_image.jpg"
+      },
+      {
+        _id: 13,
+        title: "Kit de cepillado para gatos",
+        price: 16.99,
+        description: "Conjunto completo de cepillos para mantener a tu gato bien peinado.",
+        category: "Cuidado Personal",
+        image: "grooming_kit_image.jpg"
+      },
+      {
+        _id: 14,
+        title: "Transportadora para mascotas",
+        price: 34.99,
+        description: "Bolsa de transporte cómoda y segura para gatos y perros pequeños.",
+        category: "Accesorios",
+        image: "pet_carrier_image.jpg"
+      },
+      {
+        _id: 15,
+        title: "Juguete chirriante para perros",
+        price: 7.99,
+        description: "Juguete con sonido chirriante para entretener a tu perro.",
+        category: "Juguetes",
+        image: "squeaky_toy_image.jpg"
+      },
+      {
+        _id: 16,
+        title: "Comedero elevado para gatos",
+        price: 19.99,
+        description: "Comedero elevado para gatos que promueve una mejor postura durante las comidas.",
+        category: "Alimentos",
+        image: "elevated_feeder_image.jpg"
+      },
+      {
+        _id: 17,
+        title: "Juguete de cuerda para perros",
+        price: 10.99,
+        description: "Juguete resistente de cuerda para juegos interactivos con tu perro.",
+        category: "Juguetes",
+        image: "rope_toy_image.jpg"
+      },
+      {
+        _id: 18,
+        title: "Cama ortopédica para perros mayores",
+        price: 45.99,
+        description: "Cama con soporte ortopédico para perros mayores con problemas articulares.",
+        category: "Camas",
+        image: "orthopedic_bed_image.jpg"
+      },
+      {
+        _id: 19,
+        title: "Casita para hamsters",
+        price: 14.99,
+        description: "Pequeña casita para proporcionar un refugio acogedor a tu hamster.",
+        category: "Juguetes",
+        image: "hamster_house_image.jpg"
+      },
+      {
+        _id: 20,
+        title: "Peluca divertida para gatos",
+        price: 8.99,
+        description: "Peluca hilarante para transformar a tu gato en un personaje divertido.",
+        category: "Ropa",
+        image: "cat_wig_image.jpg"
+      }
+    ]);

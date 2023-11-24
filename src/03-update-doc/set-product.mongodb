@@ -1,0 +1,134 @@
+// set-product.mongodb
+
+use("pet_store")
+    db.products.updateOne(
+        {_id: 1},
+        {
+          $set: {
+            title: 'Nuevo Collar para Perros',
+            price: 19.99,
+            description: 'Collar ajustable con diseños modernos para perros de todas las razas.',
+            category: 'Accesorios Actualizados',
+            image: 'updated_dog_collar.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 2},
+        {
+          $set: {
+            title: 'Juguete de Plumas Recargables para Gatos',
+            price: 12.99,
+            description: 'Juguete interactivo con plumas recargables para mantener a tus gatos entretenidos.',
+            category: 'Juguetes Actualizados',
+            image: 'rechargeable_cat_toy.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 3},
+        {
+          $set: {
+            title: 'Nueva Cama de Lujo para Mascotas',
+            price: 39.99,
+            description: 'Cama acolchada y lujosa para perros y gatos de todas las edades.',
+            category: 'Camas Actualizadas',
+            image: 'luxury_pet_bed.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 4},
+        {
+          $set: {
+            title: 'Correa Reflectante para Perros',
+            price: 22.99,
+            description: 'Correa extensible con material reflectante para paseos nocturnos.',
+            category: 'Accesorios Actualizados',
+            image: 'reflective_leash.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 5},
+        {
+          $set: {
+            title: 'Alimento Premium para Gatos',
+            price: 29.99,
+            description: 'Fórmula premium para una nutrición completa y equilibrada.',
+            category: 'Alimentos Actualizados',
+            image: 'premium_cat_food_updated.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 6},
+        {
+          $set: {
+            title: 'Cepillo de Autolimpieza para Mascotas',
+            price: 16.99,
+            description: 'Cepillo con tecnología de autolimpieza para el cuidado del pelaje.',
+            category: 'Cuidado Personal Actualizado',
+            image: 'self_cleaning_brush.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 7},
+        {
+          $set: {
+            title: 'Rascador de Diseño para Gatos',
+            price: 34.99,
+            description: 'Rascador elegante para satisfacer los instintos de tu gato con estilo.',
+            category: 'Mobiliario Actualizado',
+            image: 'stylish_scratcher.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 8},
+        {
+          $set: {
+            title: 'Juguete Dental para Perros',
+            price: 16.99,
+            description: 'Juguete diseñado para mejorar la salud dental de tu perro mientras juega.',
+            category: 'Juguetes Actualizados',
+            image: 'dental_chew_toy.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 9},
+        {
+          $set: {
+            title: 'Arnés de Seguridad para Gatos',
+            price: 14.99,
+            description: 'Arnés ajustable con cierre de seguridad para paseos seguros con tu gato.',
+            category: 'Accesorios Actualizados',
+            image: 'safe_cat_harness.jpg'
+          }
+        }
+      )
+      
+      db.products.updateOne(
+        {_id: 10},
+        {
+          $set: {
+            title: 'Comedero Automático Programable',
+            price: 49.99,
+            description: 'Dispensador de comida automático con programación para la alimentación de tu mascota.',
+            category: 'Alimentos Actualizados',
+            image: 'programmable_feeder.jpg'
+          }
+        }
+      )
+      
+      print("Actualización de los 10 productos completada.");
