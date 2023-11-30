@@ -1,0 +1,13 @@
+// con esta instruccion a los product
+//con la categoria juguetes inverta ui
+// llamado inventary en su valor true
+use ("pet_store")
+db. products. updateMany (
+// query
+{ category: "Juguetes" },
+// update - operators
+{
+Sset: {
+color: "azul"}
+}
+)

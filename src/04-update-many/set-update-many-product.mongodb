@@ -1,0 +1,24 @@
+//Modifica el parametro llamado inventary 
+// de su valor true a false.
+use("pet_store")
+// db.products.updateMany(
+//     // query
+//     { category: "Juguetes" },
+//     // update - operators
+//     {
+//       $set: {
+//         color: "amarillo"
+//       }
+//     }
+//  )
+
+ db.products.updateMany(
+    //query
+    {category: "Juguetes"},
+    //update- operators
+    {
+        $rename:{
+            description:"specification"
+        }
+    }
+ )

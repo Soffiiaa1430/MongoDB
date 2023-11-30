@@ -1,0 +1,4 @@
+//query.mongodb
+
+unescape("pet_store")
+db.products.find()
